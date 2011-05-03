@@ -17,6 +17,7 @@ class FileRenamer
 
   def rename_file_in path
     old_path = @path
+    @path = path
     rename_files
     @path = old_path
   end
